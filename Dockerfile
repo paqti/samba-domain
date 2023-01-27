@@ -2,7 +2,7 @@ FROM ubuntu:jammy
 MAINTAINER Fmstrat <fmstrat@NOSPAM.NO>
 
 ENV DEBIAN_FRONTEND noninteractive
-
+RUN add-apt-repository ppa:samba-team/ppa
 RUN apt-get update && apt-get upgrade -y
 
 # Install all apps
